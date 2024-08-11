@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.boxShadow {
+    box-shadow: 0 5px 15px rgba(1, 126, 126, 0.35);
+}
+
+.customGradient {
+    background-image: linear-gradient(to left top, #3ba598, #27a8ad, #23abc1, #39acd2, #59abdf, #58abe0, #57abe0, #56abe1, #2cacd6, #00acc7, #00abb4, #0da89e);
+}
+
+/* Custom animation for scrolling images */
+/* Custom animation for scrolling images */
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    display: flex;
+    animation: scroll 30s linear infinite;
+  }
+  
+  /* Hide scrollbar */
+  header::-webkit-scrollbar {
+    display: none;
+  }
+  
+  header {
+    overflow: hidden;
+  }
+  
+
+  .resolved-row {
+    background-color: green;
+  }
+  
+  .unresolved-row {
+    background-color: red;
+  }
